@@ -4,7 +4,7 @@ actions:
   setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: Kubernetes
+agent: Ansible
 agentCluster: null
 agentClusterVar: null
 agentVar: null
