@@ -4,13 +4,13 @@ actions:
   setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: area_51_ga
+agent: Airflow
 agentCluster: null
 agentClusterVar: null
 agentVar: null
 autoCleanup: false
-avgRunTime: 19
-avgRunTimeDisplay: 19 Seconds
+avgRunTime: 26
+avgRunTimeDisplay: 26 Seconds
 booleanField1:
   label: UC SSL Certificate  Verification
   name: uc_ssl_cert_verification
@@ -72,7 +72,7 @@ credentialField3:
   label: Proxy Credentials
   name: proxy_credentials
   value: null
-credentials: null
+credentials: airflow-root
 credentialsVar: null
 customField1:
   label: Requestor Name
@@ -116,9 +116,9 @@ largeTextField3:
   label: Remove UC Definitions List
   name: remove_uc_definitions_list
   value: null
-lastRun: 2023-03-30 18:43:34 +0200
-lastRunTime: 44
-lastRunTimeDisplay: 44 Seconds
+lastRun: 2023-03-30 19:16:41 +0200
+lastRunTime: 47
+lastRunTimeDisplay: 47 Seconds
 lfDayConstraint: None
 lfDuration: 00:00:00:00
 lfEnabled: false
@@ -136,8 +136,8 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-maxRunTime: 44
-maxRunTimeDisplay: 44 Seconds
+maxRunTime: 47
+maxRunTimeDisplay: 47 Seconds
 minRunTime: 6
 minRunTimeDisplay: 6 Seconds
 name: KM-JaC-Update Github - Dev
@@ -171,8 +171,8 @@ retryIndefinitely: false
 retryInterval: 60
 retryMaximum: 0
 retrySuppressFailure: false
-runCount: 3
-runTime: 58
+runCount: 4
+runTime: 105
 runtimeDir: null
 startHeld: false
 startHeldReason: null
@@ -202,7 +202,7 @@ textField5:
 textField6:
   label: Git Commit Message (export)
   name: git_commit_message
-  value: Test Export
+  value: Export from UAC on ${_date}
 timeZonePref: -- System Default --
 twDelayAmount: null
 twDelayDuration: 00:00:00:00
@@ -216,6 +216,6 @@ twWorkflowOnly: -- System Default --
 type: taskUniversal
 userEstimatedDuration: null
 variables: []
-version: 7
+version: 11
 virtualResources: []
 waitForOutput: false
