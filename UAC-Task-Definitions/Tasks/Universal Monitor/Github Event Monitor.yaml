@@ -4,26 +4,14 @@ actions:
   setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: Tokyo
-agentCluster: null
-agentClusterVar: null
-agentVar: null
-broadcastCluster: null
-broadcastClusterVar: null
-command: null
-commandOrScript: Script
 cpDuration: null
 cpDurationUnit: Minutes
-createConsole: false
-credentials: null
-credentialsVar: null
 customField1:
   label: Requestor Name
   value: null
 customField2:
   label: docu link
   value: null
-desktopInteract: false
 efDayConstraint: None
 efDuration: 00:00:00:00
 efEnabled: false
@@ -34,17 +22,39 @@ efOffsetPercentage: 0
 efOffsetType: Percentage
 efTime: 00:00
 efType: Time
-elevateUser: false
-environment: []
+eventTemplate:
+  label: github
+  value: kmgithubevent
+eventType: Global
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exitCodeOutput: null
-exitCodeProcessing: Success Exitcode Range
-exitCodeText: null
-exitCodes: '0'
+expirationAction: Failed
 exportReleaseLevel: 7.3.0.0
-exportTable: ops_task_windows
+exportTable: ops_task_universal_monitor
+filter:
+  criteria:
+  - name: payload
+    operator: CONTAINS
+    type: criterion
+    value: KM-JaC-Dev
+  - name: x_github_event
+    operator: CONTAINS
+    type: criterion
+    value: push
+  - name: landscape
+    operator: CONTAINS
+    type: criterion
+    value: km
+  - name: payload
+    operator: DOES_NOT_CONTAIN
+    type: criterion
+    value: Push from UAC
+  - name: payload
+    operator: CONTAINS
+    type: criterion
+    value: refs/heads/main
+  logicalOperator: And
 firstRun: ''
 holdResources: false
 lastRun: ''
@@ -65,19 +75,13 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-name: KM-User Powershell
+name: Github Event Monitor
 notes: []
 opswiseGroups:
 - Karthik Mohan
 - KM-Job-as-Code
-outputFailureOnly: false
-outputReturnFile: null
-outputReturnNline: '100'
-outputReturnSline: '1'
-outputReturnText: null
-outputReturnType: OUTERR
-outputType: STDOUT
-parameters: null
+relativeTimeFrom: 00:00
+relativeTimeTo: null
 resPriority: 10
 resolveNameImmediately: false
 restrictionPeriod: None
@@ -87,19 +91,17 @@ restrictionPeriodBeforeDate: null
 restrictionPeriodBeforeTime: null
 restrictionPeriodDateList: []
 retainSysIds: true
-retryExitCodes: null
-retryIndefinitely: false
-retryInterval: 60
-retryMaximum: 0
-retrySuppressFailure: false
 runCount: 0
 runTime: 0
-runtimeDir: null
-script: Km-Script.ps1
 startHeld: false
 startHeldReason: null
-summary: null
-sysId: 68547e3fda884756868c6bc51c2243ee
+summary: JaC - Example
+sysId: c1a8e23bb3014d6a9dd842f683f36fd9
+taskUniversal: null
+taskUniversalVariables: []
+template: null
+templateEventTemplate: null
+timeScope: -- None --
 timeZonePref: -- System Default --
 twDelayAmount: null
 twDelayDuration: 00:00:00:00
@@ -110,9 +112,8 @@ twWaitDuration: 00:00:00:00
 twWaitTime: 00:00
 twWaitType: None
 twWorkflowOnly: -- System Default --
-type: taskWindows
+type: taskUniversalMonitor
 userEstimatedDuration: null
 variables: []
-version: 5
+version: 4
 virtualResources: []
-waitForOutput: false
