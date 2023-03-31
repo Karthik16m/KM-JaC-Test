@@ -16,7 +16,7 @@ booleanField1:
 booleanField2:
   label: Git SSL Certificate Verification
   name: git_ssl_cert_verification
-  value: true
+  value: false
 broadcastCluster: null
 broadcastClusterVar: null
 choiceField1:
@@ -168,7 +168,7 @@ runTime: 0
 runtimeDir: null
 startHeld: false
 startHeldReason: null
-summary: JaC Task to Update UC task definitions from Github repo
+summary: JaC Task to Update UC task definitions from Github repo ${Github_repository}
 sysId: 9e2bacc2e1af4767bc6a365c97424535
 template: Jobs As Code
 textField1:
@@ -182,7 +182,7 @@ textField2:
 textField3:
   label: Git Repository Path
   name: git_repository_path
-  value: null
+  value: UAC-Task-Definitions
 textField4:
   label: Proxy
   name: proxy
@@ -207,7 +207,42 @@ twWaitType: None
 twWorkflowOnly: -- System Default --
 type: taskUniversal
 userEstimatedDuration: null
-variables: []
-version: 3
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Github_added
+  options: []
+  sysId: 9a46678829a64960ae2b4e6b311e50b7
+  value: ${_varJsonPath('ops_trigger_kmgithubevent_payload', '$.commits[0].added')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Github_commit_title
+  options: []
+  sysId: 9a5363abbebc4cfcb4a6a00384c0ff43
+  value: ${_varJsonPath('ops_trigger_kmgithubevent_payload', '$.commits[0].title')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Github_modified
+  options: []
+  sysId: 806cfc562e9d46ca97d9c369fd2092e6
+  value: ${_varJsonPath('ops_trigger_kmgithubevent_payload', '$.commits[0].modified')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Github_removed
+  options: []
+  sysId: b85d7cf655db4a9ba8d0f9201c21c3b3
+  value: ${_varJsonPath('ops_trigger_kmgithubevent_payload', '$.commits[0].removed')}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Github_repository
+  options: []
+  sysId: 34b50f67f588474088ffba5fee4df439
+  value: ${_varJsonPath('ops_trigger_kmgithubevent_payload', '$.repository.full_name')}
+version: 13
 virtualResources: []
 waitForOutput: false
