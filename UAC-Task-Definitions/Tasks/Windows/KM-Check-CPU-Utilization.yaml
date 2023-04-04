@@ -17,10 +17,10 @@ actions:
     variableValue: ${_output('STDOUT')}
   snmpNotifications: []
   systemOperations: []
-agent: null
+agent: Frankfurt
 agentCluster: null
 agentClusterVar: null
-agentVar: ${kmagentvariable}
+agentVar: null
 avgRunTime: 2
 avgRunTimeDisplay: 2 Seconds
 broadcastCluster: null
