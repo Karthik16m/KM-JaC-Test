@@ -4,7 +4,7 @@ actions:
   setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: Frankfurt
+agent: Tokyo
 agentCluster: null
 agentClusterVar: null
 agentVar: null
