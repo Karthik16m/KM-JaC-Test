@@ -2,7 +2,7 @@ actions:
   abortActions: []
   emailNotifications: []
   setVariableActions:
-  - description: Update the Variable when the task goes to success
+  - description: Update the Variable when the task goes to success (Agent name changed to Frankfurt)
     exitCodes: null
     notificationOption: Operation Failure
     notifyOnEarlyFinish: false
