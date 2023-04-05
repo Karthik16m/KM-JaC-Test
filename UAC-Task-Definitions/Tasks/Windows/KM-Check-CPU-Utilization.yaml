@@ -11,7 +11,7 @@ actions:
     notifyOnProjectedLate: false
     status: Success
     sysId: 1e70dae941844848a0abcbdea4adada2
-    variableDescription: Update the Variable when the task goes to success -osi test webhook to azure -test2 
+    variableDescription: Update the Variable when the task goes to success -osi test webhook to azure -test3 
     variableName: output_holder
     variableScope: Global
     variableValue: ${_output('STDOUT')}
