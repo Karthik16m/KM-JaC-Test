@@ -17,7 +17,7 @@ actions:
     variableValue: ${_output('STDOUT')}
   snmpNotifications: []
   systemOperations: []
-agent: Frankfurt
+agent: SB Internal
 agentCluster: null
 agentClusterVar: null
 agentVar: null
