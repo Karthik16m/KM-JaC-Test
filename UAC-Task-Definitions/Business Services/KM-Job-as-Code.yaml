@@ -1,7 +1,0 @@
-description: Tasks related to Job-as-code Demo
-exportReleaseLevel: 7.3.0.0
-exportTable: ops_generic_group
-name: KM-Job-as-Code
-retainSysIds: true
-sysId: 8a9317d423d4423da8633030159f24f7
-version: 2
