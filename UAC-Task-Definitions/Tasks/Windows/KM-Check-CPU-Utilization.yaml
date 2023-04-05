@@ -17,7 +17,7 @@ actions:
     variableValue: ${_output('STDOUT')}
   snmpNotifications: []
   systemOperations: []
-agent: SB Internal
+agent: EC2AMAZ-DFKOBC3 - AGNT0004
 agentCluster: null
 agentClusterVar: null
 agentVar: null
