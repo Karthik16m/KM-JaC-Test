@@ -11,7 +11,7 @@ actions:
     notifyOnProjectedLate: false
     status: Success
     sysId: 1e70dae941844848a0abcbdea4adada2
-    variableDescription: Update the Variable when the task goes to success -osi test webhook to azure -test3 
+    variableDescription: Update the Variable when the task goes to success 
     variableName: output_holder
     variableScope: Global
     variableValue: ${_output('STDOUT')}
@@ -25,7 +25,7 @@ avgRunTime: 2
 avgRunTimeDisplay: 2 Seconds
 broadcastCluster: null
 broadcastClusterVar: null
-command: powershell -F "C:\Users\Admin\ravi\cpu_util_version4.ps1
+command: powershell -F "C:\Users\Admin\ravi\cpu_util_version5.ps1
 commandOrScript: Command
 cpDuration: null
 cpDurationUnit: Minutes
