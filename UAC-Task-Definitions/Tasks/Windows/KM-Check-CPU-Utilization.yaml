@@ -25,7 +25,7 @@ avgRunTime: 2
 avgRunTimeDisplay: 2 Seconds
 broadcastCluster: null
 broadcastClusterVar: null
-command: powershell -F "C:\Users\Admin\ravi\cpu_util_version_final_6.ps1
+command: powershell -F "C:\Users\Admin\ravi\cpu_util_version_final.ps1
 commandOrScript: Command
 cpDuration: null
 cpDurationUnit: Minutes
